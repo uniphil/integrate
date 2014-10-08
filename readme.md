@@ -56,17 +56,17 @@ while (true) {
 
 Should log this:
 
-    ```
-    t = 0        1
-    t = 0.25     1.25
-    t = 0.5      1.5625
-    t = 0.75     1.953125
-    t = 1        2.44140625
-    t = 1.25     3.0517578125
-    t = 1.5      3.814697265625
-    t = 1.7      4.76837158203125
-    t = 2        5.9604644775390625
-    ```
+```
+t = 0        1
+t = 0.25     1.25
+t = 0.5      1.5625
+t = 0.75     1.953125
+t = 1        2.44140625
+t = 1.25     3.0517578125
+t = 1.5      3.814697265625
+t = 1.7      4.76837158203125
+t = 2        5.9604644775390625
+```
 
 
 ### How bad is euler?
@@ -81,7 +81,7 @@ Our ODE, `y' = y` at `y(0) = 1` is actually just `e^x`, so we should be convergi
 
 
 ```javascript
-var Integrate = require('./index');
+var Integrate = require('integrate');
 
 var integrate = Integrate.Integrator(function(_, y) { return y; });
 
@@ -111,10 +111,10 @@ console.log('rk4 step with error < '+stopError+' at t='+stopAt+': ', acceptableR
 
 Should log
 
-    ```
-    euler step with error < 0.0001 at t=2:  0.00000762939453125
-    rk4 step with error < 0.0001 at t=2:  0.125
-    ```
+```
+euler step with error < 0.0001 at t=2:  0.00000762939453125
+rk4 step with error < 0.0001 at t=2:  0.125
+```
 
 So, for a cost of 4x more evaluations per step, we get to run with a step size about 16,000x bigger with Runge-Kutta than with the Euler Method for similar accuracy. After our 4x evaluations per step penalty, we are still winning by about 4,000x the number of evaluations required in this example.
 
