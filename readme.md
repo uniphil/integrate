@@ -15,6 +15,16 @@ Fast
 All of the methods are hand-written in [asm.js](http://asmjs.org), so they should be fast. Not that your integration method would ever be your bottleneck anyway, but hey... why not.
 
 
+Install
+-------
+
+It's on NPM.
+
+```
+$ npm install integrate
+```
+
+
 Example
 -----
 
