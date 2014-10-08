@@ -1,0 +1,33 @@
+{
+  "name": "integrate",
+  "version": "0.0.1",
+  "description": "Numerical integrators for ordinary differential equations in asm.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:uniphil/integrate.git"
+  },
+  "keywords": [
+    "numerical",
+    "integrate",
+    "integration",
+    "rk4",
+    "runge",
+    "kutta",
+    "euler",
+    "physics",
+    "ode",
+    "ordinary",
+    "differential",
+    "equation"
+  ],
+  "author": "uniphil",
+  "license": "Public Domain",
+  "bugs": {
+    "url": "https://github.com/uniphil/integrate/issues"
+  },
+  "homepage": "https://github.com/uniphil/integrate"
+}
