@@ -12,7 +12,7 @@ Want one that's not there? Open an issue, or better yet, a pull request adding i
 Fast
 ----
 
-All of the methods are hand-written in [asm.js](http://asmjs.org), so they should be fast. Not that your integration method would ever be your bottleneck anyway, but hey... why not.
+All of the methods are hand-written in [asm.js](http://asmjs.org), so they "should be fast". Not that your integration method would ever be your bottleneck anyway, but hey... why not.
 
 
 Install
